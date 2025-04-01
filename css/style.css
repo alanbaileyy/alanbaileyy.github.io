@@ -60,9 +60,9 @@ a:hover {
 #nav {
     position: fixed;
     display: flex;
-    width: calc(100% - 40rem);
+    width: 70%;
     height: auto;
-    padding: 2rem 25rem;
+    padding: 2rem 15%;
     margin: 0;
     z-index: 99;
 }
@@ -77,31 +77,17 @@ a:hover {
     display: flex;
     align-items: center;
 }
-@media screen and (min-width: 1001px) {
-    .mobile-navbar-links {
-        opacity: 0;
-        display: none;
-    }
-    .nav-links-menu-closed {
-        opacity: 0;
-    }
-}
 @media screen and (max-width: 1000px) {
     html {
         font-size: 56.25%;
     }
     #nav {
-        width: calc(100% - 16rem);
-        padding: 2rem 8rem;
+        width: 80%;
+        padding: 2rem 10%;
     }
-    #nav-links {
-        display: none;
-    }
-    #line-menu { 
-        display: flex;
-    }
-    .nav-links-menu-closed {
-        opacity: 1;
+    #front {
+        width: 80%;
+        margin: 0 10%;
     }
 }
 @media screen and (max-width: 500px) {
@@ -109,15 +95,16 @@ a:hover {
         font-size: 50%;
     }
     #nav {
-        width: calc(100% - 6rem);
-        padding: 2rem 3rem;
+        width: 90%;
+        padding: 2rem 5%;
+    }
+    #front {
+        width: 90%;
+        margin: 0 5%;
     }
 }
 @media screen and (max-width: 300px) {
     html {
         font-size: 43.75%;
-    }
-    .nav-link-menu-closed {
-        font-size: 3.6rem;
-    }
+    } 
 }
