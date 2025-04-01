@@ -12,7 +12,7 @@
     --link-active: #262626;
     --link: #7e7e7e;
     --link-hover: var(--text);
-    --bg: #d8edf3;
+    --bg: #BDE5E8;
     --light-bg: #d8f3dc;
     --gray: #858585;
     --sans-serif: OpenSans, Sans-Serif;
@@ -30,6 +30,11 @@
 html {
     scroll-behavior: smooth;
     font-size: 62.5%;
+    background-image: url("/static/bg.svg");
+    background-color: var(--bg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 html,
 body {
@@ -41,7 +46,6 @@ body {
     padding: 0px;
     border: 0px;
     color: var(--text);
-    background: var(--bg);
     overflow: initial;
 }
 a:visited,
@@ -78,8 +82,8 @@ a:hover {
     align-items: center;
 }
 img {
-    width: 4rem;
-    height: 4rem;
+    width: 6rem;
+    height: 6rem;
     margin-left: 2rem;
 }
 @media screen and (max-width: 1000px) {

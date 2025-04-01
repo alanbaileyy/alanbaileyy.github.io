@@ -2,7 +2,7 @@
     top: 0;
     left: 0;
     width: 70%;
-    padding: 10% 0 0 0;
+    padding: 6% 0 0 0;
     margin: 0 15%;
     text-align: left;
     display: flex;
@@ -25,7 +25,15 @@ p {
     display: inline-block;
     margin: 0;
     font-weight: normal;
-    font-size: 4rem;
+    font-size: 3.6rem;
+    font-family: var(--serif);
+    font-weight: bold;
+}
+.front-smallertext {
+    display: inline-block;
+    margin: 0;
+    font-weight: normal;
+    font-size: 3rem;
     font-family: var(--serif);
     font-weight: bold;
 }
@@ -34,12 +42,17 @@ p {
     font-family: var(--sans-serif);
     font-size: 2rem;
 }
+#front-disclaimer {
+    display: inline-block;
+    font-family: var(--sans-serif);
+    font-size: 1.6rem;
+}
 .email-box {
     font-family: var(--sans-serif);
     width: fit-content;
     margin-top: 2%;
     padding: 15px;
-    background: #a5998d;
+    background: #93877c;
     color: white;
     border-radius: 5px;
     display: inline-block;
