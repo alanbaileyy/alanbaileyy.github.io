@@ -26,14 +26,14 @@ p {
     display: inline-block;
     margin: 0;
     font-weight: normal;
-    font-size: 5rem;
+    font-size: 4rem;
     font-family: var(--serif);
     font-weight: bold;
 }
 #front-subtext {
     display: inline-block;
     font-family: var(--sans-serif);
-    font-size: 2.4rem;
+    font-size: 2rem;
 }
 .email-box {
     font-family: var(--sans-serif);
@@ -44,5 +44,5 @@ p {
     color: white;
     border-radius: 5px;
     display: inline-block;
-    font-size: 2.4rem;
+    font-size: 2rem;
 }
