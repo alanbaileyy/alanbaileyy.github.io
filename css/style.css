@@ -58,7 +58,6 @@ a:hover {
     text-decoration: underline;
 }
 #nav {
-    position: fixed;
     display: flex;
     width: 70%;
     height: auto;
