@@ -9,6 +9,7 @@
 :root {
     --main-color: #74c69d;
     --text: #2d6a4f;
+    --button: #428064;
     --link-active: #262626;
     --link: #7e7e7e;
     --link-hover: var(--text);
@@ -68,6 +69,8 @@ a:hover {
     padding: 2rem 15%;
     margin: 0;
     z-index: 99;
+    justify-content: space-between;
+    align-items: center;
 }
 #nav-title {
     font-family: var(--serif);
@@ -81,10 +84,51 @@ a:hover {
     display: flex;
     align-items: center;
 }
+.dropbtn {
+    background-color: var(--button);
+    color: white;
+    padding: 1rem;
+    height: 4rem;
+    width: 4rem;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.dropbtn:hover, .dropbtn:focus {
+    background-color: var(--text);
+}
+#language-button {
+    font-family: var(--sans-serif);
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+#active {
+    background-color: var(--main-color);
+}
+.dropdown-content a {
+    font-size: 1.8rem;
+    color: black;
+    padding: 1rem;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: #d0d0d0;}
+.show {display:block;}
 img {
     width: 6rem;
     height: 6rem;
     margin-left: 2rem;
+}
+#language-button {
+    right: 0;
 }
 @media screen and (max-width: 1000px) {
     html {
