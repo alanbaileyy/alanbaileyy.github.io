@@ -40,6 +40,11 @@ jobs:
       - name: Build (static export)
         run: pnpm build
 
+      - name: Verify export output
+        run: |
+          test -d ./out
+          test -f ./out/index.html
+
       # Next.js writes the static site to ./out. The .nojekyll file stops
       # GitHub from ignoring the _next/ folder.
       - name: Add .nojekyll
