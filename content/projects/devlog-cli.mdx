@@ -1,0 +1,21 @@
+---
+title: "Devlog CLI"
+date: "2026-03-12"
+summary: "A tiny command-line tool for keeping a daily engineering journal from the terminal."
+image: "/projects/cli-tool.png"
+---
+
+A small command-line tool I built to keep a daily engineering journal without leaving the terminal.
+
+## The idea
+
+I kept forgetting what I worked on. `devlog` lets me jot a one-line note with a single command, and it appends it to a dated Markdown file.
+
+```bash
+devlog "shipped the new content pipeline"
+devlog --today   # print today's entries
+```
+
+## What I learned
+
+Building a good CLI is mostly about defaults. The tool should do the right thing with no flags, and only expose options when you actually need them. Keeping the surface area tiny made it something I actually reach for every day.
