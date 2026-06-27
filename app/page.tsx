@@ -24,6 +24,37 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Recent writing — large button rows */}
+      <HomeSection title="Writing" href="/blog" linkLabel="All writing">
+        <ul className="flex flex-col gap-3">
+          {posts.map((post) => (
+            <li key={post.slug}>
+              <Link
+                href={`/blog/${post.slug}`}
+                className="group flex items-center justify-between gap-4 rounded-xl border border-border bg-muted/40 px-5 py-4 transition-colors hover:border-accent/40 hover:bg-accent-muted"
+              >
+                <div className="flex flex-col gap-0.5">
+                  <span className="font-medium tracking-tight text-foreground">
+                    {post.title}
+                  </span>
+                  {post.summary && (
+                    <span className="text-sm leading-relaxed text-pretty text-muted-foreground">
+                      {post.summary}
+                    </span>
+                  )}
+                </div>
+                <div className="flex shrink-0 items-center gap-3">
+                  <span className="hidden font-mono text-xs text-muted-foreground sm:inline">
+                    {formatDate(post.date)}
+                  </span>
+                  <ArrowRight className="size-4 text-muted-foreground transition-all group-hover:translate-x-0.5 group-hover:text-accent" />
+                </div>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </HomeSection>
+
       {/* Selected projects — large image cards */}
       <HomeSection title="Projects" href="/projects" linkLabel="All projects">
         <ul className="grid grid-cols-1 gap-5 sm:grid-cols-2">
@@ -82,37 +113,6 @@ export default function HomePage() {
               </li>
             )
           })}
-        </ul>
-      </HomeSection>
-
-      {/* Recent writing — large button rows */}
-      <HomeSection title="Writing" href="/blog" linkLabel="All writing">
-        <ul className="flex flex-col gap-3">
-          {posts.map((post) => (
-            <li key={post.slug}>
-              <Link
-                href={`/blog/${post.slug}`}
-                className="group flex items-center justify-between gap-4 rounded-xl border border-border bg-muted/40 px-5 py-4 transition-colors hover:border-accent/40 hover:bg-accent-muted"
-              >
-                <div className="flex flex-col gap-0.5">
-                  <span className="font-medium tracking-tight text-foreground">
-                    {post.title}
-                  </span>
-                  {post.summary && (
-                    <span className="text-sm leading-relaxed text-pretty text-muted-foreground">
-                      {post.summary}
-                    </span>
-                  )}
-                </div>
-                <div className="flex shrink-0 items-center gap-3">
-                  <span className="hidden font-mono text-xs text-muted-foreground sm:inline">
-                    {formatDate(post.date)}
-                  </span>
-                  <ArrowRight className="size-4 text-muted-foreground transition-all group-hover:translate-x-0.5 group-hover:text-accent" />
-                </div>
-              </Link>
-            </li>
-          ))}
         </ul>
       </HomeSection>
     </div>
