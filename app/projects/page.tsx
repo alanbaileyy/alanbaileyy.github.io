@@ -3,10 +3,11 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { ArrowUpRight } from 'lucide-react'
 import { getAllProjects } from '@/lib/content'
+import { siteConfig } from '@/lib/site'
 
 export const metadata: Metadata = {
-  title: 'Projects',
-  description: 'Things I have built, designed, and shipped.',
+  title: siteConfig.pages.projects.title,
+  description: siteConfig.pages.projects.description,
 }
 
 export default function ProjectsPage() {
@@ -16,11 +17,10 @@ export default function ProjectsPage() {
     <div className="flex flex-col gap-10">
       <header className="flex flex-col gap-3">
         <h1 className="font-serif text-4xl font-medium tracking-tight">
-          Projects
+          {siteConfig.pages.projects.title}
         </h1>
         <p className="max-w-xl text-[0.975rem] leading-relaxed text-muted-foreground text-pretty">
-          Things I&apos;ve built around energy, sustainability, and electronics.
-          Some link to a writeup, others link straight to the project.
+          {siteConfig.pages.projects.description}
         </p>
       </header>
 

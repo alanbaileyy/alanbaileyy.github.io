@@ -2,10 +2,11 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import { getAllPosts, formatDate } from '@/lib/content'
+import { siteConfig } from '@/lib/site'
 
 export const metadata: Metadata = {
-  title: 'Writing',
-  description: 'Notes, essays, and the occasional deep dive.',
+  title: siteConfig.pages.writing.title,
+  description: siteConfig.pages.writing.description,
 }
 
 export default function BlogPage() {
@@ -23,11 +24,10 @@ export default function BlogPage() {
     <div className="flex flex-col gap-10">
       <header className="flex flex-col gap-3">
         <h1 className="font-serif text-4xl font-medium tracking-tight">
-          Writing
+          {siteConfig.pages.writing.title}
         </h1>
         <p className="max-w-xl text-[0.975rem] leading-relaxed text-muted-foreground text-pretty">
-          Notes, essays, and the occasional deep dive on energy, sustainability,
-          and the things I&apos;m building.
+          {siteConfig.pages.writing.description}
         </p>
       </header>
 
