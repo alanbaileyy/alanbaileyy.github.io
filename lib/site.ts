@@ -12,14 +12,14 @@ export const siteConfig = {
 
   // Short intro shown on the home page.
   intro: [
-    "I'm an electrical engineer interested in sustainability and clean energy. I care about designing systems that use power efficiently — from the circuit level up to the grid.",
+    "I'm an electrical engineer interested in sustainability. I'm passionate about using technology to improve environmental issues.",
     'This is my corner of the internet where I share what I build and write down what I learn along the way.',
   ],
 
   pages: {
     projects: {
       title: 'Projects',
-      description: 'Things I have built, designed, and shipped.',
+      description: 'Currently a work in progress. Things I have built, and designed.',
       titleTemplate: 'Projects — %s',
     },
     writing: {
