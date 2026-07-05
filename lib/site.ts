@@ -24,7 +24,7 @@ export const siteConfig = {
     },
     writing: {
       title: 'Writing',
-      description: 'Notes, essays, and the occasional deep dive.',
+      description: 'I like to write about topics that interest me, and share what I learn along the way.',
       titleTemplate: 'Writing — %s',
     },
   },
