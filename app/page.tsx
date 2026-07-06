@@ -11,16 +11,25 @@ export default function HomePage() {
   return (
     <div className="flex flex-col gap-16">
       {/* Intro */}
-      <section className="flex flex-col gap-5">
-        <h1 className="font-serif text-4xl font-medium tracking-tight text-balance sm:text-5xl">
-          {siteConfig.name}
-        </h1>
-        <div className="flex max-w-xl flex-col gap-4 text-[0.975rem] leading-relaxed text-muted-foreground">
-          {siteConfig.intro.map((paragraph, i) => (
-            <p key={i} className="text-pretty">
-              {paragraph}
-            </p>
-          ))}
+      <section className="relative overflow-hidden rounded-[1.6rem] border border-border/80 bg-gradient-to-br from-background via-accent-muted/50 to-background p-6 shadow-[0_20px_60px_-30px_rgba(15,23,42,0.25)] sm:p-8">
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(84,157,99,0.16),_transparent_40%)]" />
+        <div className="relative flex flex-col gap-6 lg:items-start lg:justify-between">
+          <div className="flex max-w-2xl flex-col gap-4">
+            <div className="inline-flex w-fit items-center gap-2 rounded-full border border-accent/20 bg-background/70 px-3 py-1 text-[0.7rem] font-medium tracking-[0.24em] text-accent uppercase backdrop-blur">
+              <span className="size-2 rounded-full bg-accent" />
+              {siteConfig.hero.badge}
+            </div>
+            <h1 className="font-serif text-4xl font-medium tracking-tight text-balance sm:text-5xl lg:text-6xl">
+              {siteConfig.name}
+            </h1>
+            <div className="flex max-w-xl flex-col gap-4 text-[0.975rem] leading-relaxed text-muted-foreground">
+              {siteConfig.intro.map((paragraph, i) => (
+                <p key={i} className="text-pretty">
+                  {paragraph}
+                </p>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
@@ -31,7 +40,7 @@ export default function HomePage() {
             <li key={post.slug}>
               <Link
                 href={`/blog/${post.slug}`}
-                className="group flex items-center justify-between gap-4 rounded-xl border border-border bg-muted/40 px-5 py-4 transition-colors hover:border-accent/40 hover:bg-accent-muted"
+                className="group flex items-center justify-between gap-4 rounded-xl border border-border bg-gradient-to-r from-background/90 via-muted/70 to-background/90 px-5 py-4 shadow-[0_8px_30px_-18px_rgba(15,23,42,0.35)] transition-all duration-200 hover:-translate-y-0.5 hover:border-accent/40 hover:bg-accent-muted"
               >
                 <div className="flex flex-col gap-0.5">
                   <span className="font-medium tracking-tight text-foreground">
@@ -65,7 +74,7 @@ export default function HomePage() {
               : `/projects/${project.slug}`
 
             const card = (
-              <article className="group flex h-full flex-col gap-4 rounded-xl border border-border bg-muted/40 p-4 transition-colors hover:border-accent/40 hover:bg-accent-muted">
+              <article className="group flex h-full flex-col gap-4 rounded-xl border border-border bg-gradient-to-br from-background/90 via-muted/70 to-background/90 p-4 shadow-[0_10px_30px_-18px_rgba(15,23,42,0.35)] transition-all duration-200 hover:-translate-y-0.5 hover:border-accent/40 hover:bg-accent-muted">
                 <div className="flex items-center justify-between gap-3">
                   <span className="font-mono text-xs tracking-wide text-muted-foreground">
                     Projects · {project.title}

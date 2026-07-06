@@ -38,14 +38,22 @@ export default async function BlogPostPage({
     <article className="flex flex-col gap-8">
       <BackLink href="/blog" label="Writing" />
 
-      <header className="flex flex-col gap-3">
-        <h1 className="font-serif text-3xl font-medium tracking-tight text-balance">
-          {post.title}
-        </h1>
-        <p className="text-sm text-muted-foreground">{formatDate(post.date)}</p>
+      <header className="border-b border-border/70 pb-6">
+        <div className="flex flex-col gap-4">
+          <h1 className="max-w-3xl font-serif text-3xl font-medium tracking-tight text-balance sm:text-4xl lg:text-[2.4rem]">
+            {post.title}
+          </h1>
+          <div className="flex flex-wrap items-center gap-3 text-sm text-muted-foreground">
+            <span>{formatDate(post.date)}</span>
+            {post.summary && <span className="hidden h-1.5 w-1.5 rounded-full bg-border sm:inline" />}
+            {post.summary && <span className="max-w-2xl text-pretty">{post.summary}</span>}
+          </div>
+        </div>
       </header>
 
-      <MdxContent source={post.content} />
+      <div className="rounded-[1.2rem] bg-background/60 p-1 sm:p-2">
+        <MdxContent source={post.content} />
+      </div>
     </article>
   )
 }

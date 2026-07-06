@@ -32,7 +32,7 @@ export default function ProjectsPage() {
             : `/projects/${project.slug}`
 
           const card = (
-            <article className="group flex h-full flex-col gap-4 rounded-xl border border-border bg-muted/40 p-4 transition-colors hover:border-accent/40 hover:bg-accent-muted">
+            <article className="group flex h-full flex-col gap-4 rounded-xl border border-border bg-gradient-to-br from-background/90 via-muted/70 to-background/90 p-4 shadow-[0_10px_30px_-18px_rgba(15,23,42,0.3)] transition-all duration-200 hover:-translate-y-0.5 hover:border-accent/40 hover:bg-accent-muted">
               <div className="flex items-center justify-between gap-3">
                 <span className="font-mono text-xs tracking-wide text-muted-foreground">
                   Projects · {project.title}

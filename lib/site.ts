@@ -16,6 +16,13 @@ export const siteConfig = {
     'This is my corner of the internet where I share what I build and write down what I learn along the way.',
   ],
 
+  // Copy shown in the hero banner on the home page.
+  hero: {
+    badge: 'Design • Writing • Climate',
+    currentLabel: 'Currently',
+    currentText: 'Building thoughtful digital experiences and writing about climate, energy, and the systems shaping our future.',
+  },
+
   pages: {
     projects: {
       title: 'Projects',
