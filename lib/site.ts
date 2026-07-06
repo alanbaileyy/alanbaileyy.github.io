@@ -12,7 +12,7 @@ export const siteConfig = {
 
   // Short intro shown on the home page.
   intro: [
-    "I'm an electrical engineer interested in sustainability. I'm passionate about using technology to improve environmental issues.",
+    "I'm an electrical engineering student interested in sustainability. I'm passionate about using technology to improve environmental issues.",
     'This is my corner of the internet where I share what I build and write down what I learn along the way.',
   ],
 
