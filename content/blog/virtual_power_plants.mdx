@@ -1,0 +1,80 @@
+---
+title: "The Decentralized Grid: turning homes into a power grid"
+date: "2026-07-13"
+summary: "Exploring Virtual Power Plants which can link households to balance the grid."
+---
+
+Consider this nightmarish scenario: It’s mid-July, a brutal heatwave hits and millions of people stay locked inside with their air conditioning cranked up, creating a massive spike in energy demand. Traditionally, utility companies would panic and fire up fossil fuel peaker plants to avoid a blackout.  
+
+But a new technology completely changes this dynamic: **Virtual Power Plants (VPPs)**. Instead of building large peaker plants to balance the grid during peaks in demand, companies like OhmConnect, SunRun, Leap, Autogrid, Voltus and Tesla encourage consumers to join a network that aggregates smaller energy resources, like solar panels, battery storage, and smart appliances. 
+
+![Virtual Power Plant](/blog/virtual_power_plants/VPP.jpg)
+> #### What I imagine a virtual power plant "looks" like
+
+Now, during a heatwave, it’s a completely different story. Grid Providers with VPPs gain two powerful control mechanisms:
+* **Nudging:** VPP software tells your smart home technology to reduce demand, for instance, raising your thermostat by 1 degree. Although it may seem minuscule, over thousands of homes, it adds up.
+* **Exporting:** The grid draws energy from home batteries and residential solar panels.
+
+This allows a community of houses to behave like a peaker plant.
+
+---
+
+## How it happens
+
+What I found most interesting was how consumer technology can be re-engineered into a network that can stabilise the grid. Utilities can access a range of common energy resources:
+
+* **Smart thermostats:** Reducing heating or cooling to lower energy demand while still being comfortable.
+* **Electric Vehicles:** Adjusting the amount and timing of charging to minimise grid usage.
+* **House Batteries:** Providing backup power directly to the grid when needed.
+* **Smart Water Heaters:** Choosing to heat water when energy is abundant and avoiding it when demand is high.
+
+It’s also a pretty good deal for consumers, as companies incentivise households with lower power bills. 
+
+---
+
+## The Wins and Hurdles
+
+### The Wins
+
+* **Affordability:** “Peaker plants” are expensive to maintain and only operate intermittently. VPPs keep electricity prices affordable during demand spikes, which lowers consumer power bills while households in the VPP make money.
+* **Sustainability:** Due to the reduced reliance on polluting “peaker plants”, it reduces carbon emissions. VPPs could also be used to absorb the variability of solar and wind power (supply power when solar or wind production is down), making them more viable to build and operate.
+* **Reliability:** Balancing the supply and demand on the grid drastically reduces the chance of blackouts. 
+* **Flexibility:** Software can easily scale energy demand and adapt seamlessly to the energy needs of a community.
+
+### The Hurdles
+
+* **The Software Nightmare:** VPP software is needed to integrate and control lots of different smart devices, which are often not standardised. I’ve experienced this frustration firsthand in my own projects. You swap out one device, and the whole system falls apart because nothing can talk to each other. However, the use of AI is making this much more possible, as it can adapt quickly.
+* **Battery Degradation:** The extra charge-and-discharge cycles wear out lithium-ion batteries, potentially shortening their overall operational lifespan.
+* **The Autonomy Sacrifice:** By participating in a VPP, you sacrifice some autonomy over your energy usage. Imagine putting your EV on charge during a spike in energy demand. That’s fine until you want to make an impromptu late-night snack run and realise your car only gained 10% charge in the last 3 hours.
+* **Privacy & Cybersecurity:** Aggregating thousands of devices creates a massive digital attack surface. If malicious actors hack a VPP's central software, they have access to private data and potentially gain a kill switch for thousands of households.
+
+---
+
+## The current landscape
+
+According to the Department of Energy, there is roughly 30 GW of VPP capacity available today, which could increase to as much as **160 GW by 2030**, covering about **20% of peak demand**.
+
+Some states are passing policies to protect customers, such as requiring companies to have minimum usage payment and long-term contracts to use consumers' resources.
+
+The most successful VPP network is in California. The Demand Side Grid Support program is a collaboration between utility companies, including Pacific Gas & Electric, and aggregators like Tesla and Sunrun. In the network, tens of thousands of households form a VPP with **1.6 GW of capacity**, which is predicted to reach up to **7 GW by 2030**. However, due to a recent change from California lawmakers to reduce funding for the Demand Side Grid Support program, companies like Sunrun and Tesla are unsure if they will still be able to pay customers.
+
+This is surprising given how successful the network is. In a test, California’s three major utility companies were able to dispatch around **540 MW** from Sunrun and Tesla batteries.
+
+---
+
+##  My Take: Look Beyond the Living Room
+
+I think that the future of VPPs lies in **heavy industry**. If we can aggregate manufacturing plants, data centres, and other commercial properties into VPP networks, we can benefit at a much larger scale. 
+
+These facilities could provide the grid balance for thousands of houses. Furthermore, their industrial cooling and heating draw huge amounts of energy from the grid, which could be modulated during demand spikes.
+
+---
+
+### Sources & References
+
+* [Rocky Mountain Institute: Clean Energy 101 — Virtual Power Plants](https://rmi.org/resources/clean-energy-101-virtual-power-plants/)
+* [National Rural Utilities Cooperative Finance Corporation: Exploring Virtual Power Plants — Key Considerations for Leaders](https://www.nrucfc.coop/content/solutions/en/stories/energy-tech/exploring-virtual-power-plants--key-considerations-for-leaders.html)
+* [U.S. Department of Energy (DOE): Office of Electricity — Virtual Power Plants](https://www.energy.gov/edf/virtual-power-plants)
+* [Utility Dive - How VPPs can help data centers connect to the grid faster](https://www.utilitydive.com/news/vpp-virtual-power-plant-data-centers-RMI/805605/)
+* [Canary Media - Did California just screw up the largest virtual power plant in the US?](https://www.canarymedia.com/articles/virtual-power-plants/california-dsgs-funding-2025-legislation)
+* [Utility Dive - Virtual power plant adoption could save California ratepayers $550M annually: Brattle report](https://www.utilitydive.com/news/virtual-power-plant-adoption-could-save-california-ratepayers-550m-annuall/713185/)
